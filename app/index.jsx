@@ -5,6 +5,7 @@ import ThemedView from "../components/ThemedView"
 import ThemedText from "../components/ThemedText"
 import ThemedLogo from "../components/ThemedLogo"
 import Spacer from "../components/Spacer"
+import { Colors } from '../constants/Colors'
 
 const Home = () => {
   return (
@@ -18,13 +19,18 @@ const Home = () => {
         Reading List App
       </ThemedText>
 
-      <Link href="/about" style={styles.link}>
-        <ThemedText>About Page</ThemedText>
+      <Link href="/login" style={styles.link}>
+        <ThemedText>Login</ThemedText>
       </Link>
 
-      <Link href="/contact" style={styles.link}>
-        <ThemedText>Contact Page</ThemedText>
+      <Link href="/register" style={styles.link}>
+        <ThemedText>Register</ThemedText>
       </Link>
+
+      <Link href="/profile" style={styles.link}>
+        <ThemedText>Profile</ThemedText>
+      </Link>
+
     </ThemedView>
   )
 }
@@ -47,5 +53,5 @@ const styles = StyleSheet.create({
   link: {
     marginVertical: 10,
     borderBottomWidth: 1
-  }
+  },
 })
